@@ -1,7 +1,7 @@
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: "请在设置页填写授权码。",
+    Unauthorized: "请在设置页填写密码或者填写自己的 ApiKey 后使用。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -72,13 +72,13 @@ const cn = {
     },
     Token: {
       Title: "API Key",
-      SubTitle: "使用自己的 Key 可绕过受控访问限制",
+      SubTitle: "填写自己的 APIKey 后可直接使用，无需再填写网站密码",
       Placeholder: "OpenAI API Key",
     },
     AccessCode: {
-      Title: "访问码",
-      SubTitle: "现在是受控访问状态",
-      Placeholder: "请输入访问码",
+      Title: "网站密码：",
+      SubTitle: "输入密码后可使用",
+      Placeholder: "请输入网站密码",
     },
     Model: "模型 (model)",
     Temperature: {
